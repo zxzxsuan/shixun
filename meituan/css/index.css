@@ -1,0 +1,44 @@
+#header{
+    background: #06c1ae;
+    display: -webkit-box;
+    height: 1.02rem;
+    line-height: 1.02rem;
+}
+#city{
+    width: 1.2rem;
+
+    background: url("../img/downarrow.png") no-repeat 0.9rem center;
+    -webkit-background-size: 0.32rem 0.32rem;
+
+    color: #fff ;
+
+}
+#search{
+    -webkit-box-flex: 1;
+       }
+#search input{
+    width:98%;
+    height: 0.64rem;
+    -webkit-border-radius: 0.24rem;
+
+    outline:none;
+    border: #05a494 ;
+    background: #05a494 url(../img/magnify.png) no-repeat 0.12rem center;
+    -webkit-background-size: 0.5rem;
+    text-indent: 0.7rem;
+    color: #fff ;
+
+            }
+#search::-webkit-input-placeholder{
+color: #fff;
+
+}
+#mine{
+color: #fff;
+}
+#banner{
+    height: 1rem;
+    background: #f0efed url(../img/banner.jpg) no-repeat center;
+    -webkit-background-size:7.8rem 1.2rem;
+    backgroundsize:1.4rem 1rem;
+}
