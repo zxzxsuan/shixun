@@ -96,3 +96,12 @@ color: #fff;
 #nav span.active{
     background-color: #06c1ae;
 }
+#activity{
+    display: -webkit-box;
+    text-align: center;
+    margin: 0.3rem 0;
+    background-color: #fff;
+}
+#activity div{
+    -webkit-box-flex: 1;
+}
