@@ -46,4 +46,12 @@ class Welcome extends CI_Controller {
             echo "登录失败";
         }
     }
+
+
+public function register_page()
+{
+    $this -> load -> view("register");
 }
+}
+
+
