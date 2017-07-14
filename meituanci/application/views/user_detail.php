@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/login.css">
-    <script src="../../javascript/rem.js"></script>
-    <script src="../../javascript/jquery-1.12.4.js"></script>
-    <script src="../../javascript/user_detail.js"></script>
-    <script src="../../javascript/jquery.mobile-1.4.5.js"></script>
+    <script src="javascript/rem.js"></script>
+    <script src="javascript/jquery-1.12.4.js"></script>
+    <script src="javascript/user_detail.js"></script>
+    <script src="javascript/jquery.mobile-1.4.5.js"></script>
     <title>用户详情</title>
 </head>
 <body>
 <div id="header">
     <a id="home" href="javascript:;"
        class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-home ui-btn-left"
-       style="margin: 0;">首页</a>
+       style="margin:0;">首页</a>
     用户详情
 </div>
 <h1 style="margin-top: 1.02rem;">当前用户为: <?php echo $this->session->userinfo->username; ?></h1>
