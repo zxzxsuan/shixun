@@ -1,4 +1,6 @@
-
+/**
+ * Created by xiecheng on 2017/7/6.
+ */
 $(document).on("pageinit",function(event){
     var $guideUl = $("#guide ul");
     var $navSpan = $("#nav span");
@@ -28,7 +30,8 @@ $(document).on("pageinit",function(event){
     });
 
     $("#menu li").on("tap", function(){
-        location.href = "welcome/detail";
+        var productId = $(this).children('.product-id').val();
+        location.href = "welcome/detail/"+productId;
     });
 
     $("#login").on("tap", function(){
@@ -42,6 +45,7 @@ $(document).on("pageinit",function(event){
     $("#logout").on("tap", function(){
         location.href = "user/logout";
     });
+
 
     function swipeGuide(index){
         $navSpan.eq(index).addClass("active").siblings().removeClass("active");

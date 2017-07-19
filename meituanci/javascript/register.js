@@ -1,3 +1,6 @@
+/**
+ * Created by xiecheng on 2017/7/12.
+ */
 $(document).on("pageinit", function(){
 
     var $username = $("#username");
@@ -11,7 +14,6 @@ $(document).on("pageinit", function(){
         }, function(res){
             if(res == "no"){//用户名不可用
                 $("#is-use").html("用户名已存在，你换一个");
-                $("#username").val("");
             }else{
                 $("#is-use").html("用户名可用");
             }
