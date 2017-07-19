@@ -13,7 +13,7 @@ $(document).on("pageinit", function(){
             "username" : $(this).val()
         }, function(res){
             if(res == "no"){//用户名不可用
-                $("#is-use").html("用户名已存在，你换一个");
+                $("#is-use").html("用户名已存在");
             }else{
                 $("#is-use").html("用户名可用");
             }

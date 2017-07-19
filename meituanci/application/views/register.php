@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <base href="<?php echo site_url(); ?>">
-    <link rel="shortcut icon" href="../../img/favicon.ico"/>
-    <link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="javascript/rem.js"></script>
     <script src="javascript/jquery-1.12.4.js"></script>
     <script src="javascript/index.js"></script>

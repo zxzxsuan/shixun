@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>团购详情</title>
     <base href="<?php echo site_url(); ?>">
-    <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <link rel="stylesheet" href="../../css/jquery.mobile-1.4.5.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/detail.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
     <script src="javascript/rem.js"></script>
     <script src="javascript/jquery-1.12.4.js"></script>
     <script src="javascript/index.js"></script>
@@ -20,13 +20,14 @@
 <div data-role="page">
     <div data-role="header" id="header">
         <div id="left">
-            <img src="../../img/left-arrow.png" alt="">
+            <img src="img/left-arrow.png" alt="">
         </div>
         <div id="group">
             团购详情
         </div>
         <div id="collect">
-            <span>收藏</span>
+            <input type="hidden" id="hidden-product-id" value="<?php echo $row->product_id?>">
+            <span id="collect-btn" class="<?php echo $row->collect=='取消'?'active':''?>"><?php echo $row->collect?></span>
             <span>导航</span>
         </div>
     </div>
@@ -38,7 +39,7 @@
             </div>
         </div>
         <div id="price">
-            <span class="preferential-price"><span>7.5</span>元</span>
+            <span class="preferential-price"><span><?php echo $row->discount_price?></span>元</span>
             <span>门市价:<?php echo $row->price?>元</span>
             <button data-role="none" class="buy">立即购买</button>
         </div>
@@ -49,11 +50,11 @@
         </div>
         <div id="evaluate-type">
             <div id="star">
-                <img src="../../img/star-yellow.png" alt="">
-                <img src="../../img/star-yellow.png" alt="">
-                <img src="../../img/star-yellow.png" alt="">
-                <img src="../../img/star-yellow.png" alt="">
-                <img src="../../img/star-gray.png" alt="">
+                <img src="img/star-yellow.png" alt="">
+                <img src="img/star-yellow.png" alt="">
+                <img src="img/star-yellow.png" alt="">
+                <img src="img/star-yellow.png" alt="">
+                <img src="img/star-gray.png" alt="">
                 <span class="score">4.4分</span>
                 <span class="evaluate-num">13962人评价&gt;</span>
             </div>
@@ -128,11 +129,11 @@
             <div class="evaluate-title">
                 <h3>评价</h3>
                 <div class="star">
-                    <img src="../../img/star-yellow.png" alt="">
-                    <img src="../../img/star-yellow.png" alt="">
-                    <img src="../../img/star-yellow.png" alt="">
-                    <img src="../../img/star-yellow.png" alt="">
-                    <img src="../../img/star-gray.png" alt="">
+                    <img src="img/star-yellow.png" alt="">
+                    <img src="img/star-yellow.png" alt="">
+                    <img src="img/star-yellow.png" alt="">
+                    <img src="img/star-yellow.png" alt="">
+                    <img src="img/star-gray.png" alt="">
                     <span class="score">4.4分</span>
                 </div>
             </div>
@@ -140,7 +141,7 @@
             <div class="item">
                 <div class="item-title">
                     <div class="header">
-                        <img src="../../img/header.jpg" alt="">
+                        <img src="img/header.jpg" alt="">
                     </div>
                     <div class="desc">
                         <p class="name"><?php echo $comment->username?></p>
@@ -156,7 +157,7 @@
                         </div>
                         <span class="date"><?php echo $comment->time?></span>
                     </div>
-                    <img src="../../img/earnest.png" alt="" class="earnest">
+                    <img src="img/earnest.png" alt="" class="earnest">
                 </div>
                 <div class="item-content">
                     <?php echo $comment->content?>
@@ -174,7 +175,7 @@
         <div id="go-top"></div>
     </div>
     <div data-role="footer" id="footer">
-        <img src="../../img/meituan.jpg" alt="" class="logo">
+        <img src="img/meituan.jpg" alt="" class="logo">
         <div>
             <p>9.9元看电影</p>
             <p>快来美团手机客户端</p>
